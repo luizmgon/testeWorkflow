@@ -28,7 +28,7 @@ jobs:
       - name: Push changes
         run: |
           git config --global user.email "luizmg03@gmail.com"
-          git config --global user.name "Luiz
+          git config --global user.name "Luiz"
           git add .
           git commit -m "[Actions] updated csv database"
           git push
