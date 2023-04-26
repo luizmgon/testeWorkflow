@@ -12,8 +12,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-    permissions: read-all|write-all
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,8 +27,6 @@ jobs:
         
       - name: Push changes
         run: |
-          git config --global user.email "luizmg03@gmail.com"
-          git config --global user.name "Luiz"
           git add .
-          git commit -m "updated csv database"
+          git commit -m "[Actions] updated csv database"
           git push
