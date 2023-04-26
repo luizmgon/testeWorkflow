@@ -8,12 +8,12 @@ print(os.listdir())
 csv_files = os.listdir('CSV Files')
 print(csv_files)
 
-with open('CSV Files\\added_csvs.txt') as f:
+with open('CSV Files/added_csvs.txt') as f:
     added = f.readlines()
 
 for file in csv_files:
     if((file+'\n') not in added):
-        with open('CSV Files\\added_csvs.txt', 'a') as f:
+        with open('CSV Files/added_csvs.txt', 'a') as f:
             f.write(file + '\n')
         corrige_csv(file)
         
