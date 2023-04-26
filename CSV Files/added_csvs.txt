@@ -1,3 +1,5 @@
 familia.csv
 added_csvs.txt
 outro.csv
+profissoes.csv
+ensino.csv
